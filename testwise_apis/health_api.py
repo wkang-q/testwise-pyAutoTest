@@ -3,7 +3,7 @@ import datas
 
 def health_api():
     # 健康检查地址（UAT 正常端口是 12865；写成 12866 可故意练 ConnectionError）
-    health_url = 'http://127.0.0.1:12866/health'
+    health_url = 'https://testwise-uat.wkangs.cn/health'
     try:
         # try 要包住 request：连不上时异常出在这里，包在外面接不住
         resp = request(
